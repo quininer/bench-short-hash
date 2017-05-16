@@ -1,0 +1,21 @@
+[package]
+name = "bench-short-hash"
+version = "0.1.0"
+authors = ["quininer kel <quininer@live.com>"]
+
+[dependencies]
+twox-hash = "*"
+seahash = "*"
+# fasthash = "*"
+fnv = "*"
+siphasher = "*"
+jhash = "*"
+farmhash = "*"
+djb33 = "*"
+metrohash = "*"
+murmurhash3 = "*"
+
+crc = "*"
+
+rand = "*"
+lazy_static = "*"
