@@ -14,6 +14,7 @@ extern crate metrohash;
 extern crate murmurhash3;
 extern crate djb33;
 extern crate jhash;
+extern crate fxhash;
 
 use test::{ Bencher, black_box };
 
@@ -140,3 +141,4 @@ bench_hasher!(: bench_djb33, (djb33::djb33), |input| djb33(42, black_box(input))
 bench_hasher!(bench_fnv, (fnv::FnvHasher), FnvHasher::default());
 bench_hasher!(bench_seahash, (seahash::SeaHasher), SeaHasher::new());
 bench_hasher!(bench_jhash, (jhash::JHasher), JHasher::default());
+bench_hasher!(bench_fxhash, (fxhash::FxHasher), FxHasher::default());

@@ -14,6 +14,7 @@ farmhash = "*"
 djb33 = "*"
 metrohash = "*"
 murmurhash3 = "*"
+fxhash = "*"
 
 crc = "*"
 
